@@ -1,0 +1,182 @@
+{
+  "http_to_mqtt": [
+    {
+      "name": "relais1_status",
+      "url": "http://{ip}/api/core/io/1?ApiKey={apikey}",
+      "method": "GET",
+      "interval": 5,
+      "mqtt_topic": "ipx800v5/api/core/io/relais1/on",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "relais2_status",
+      "url": "http://{ip}/api/core/io/2?ApiKey={apikey}",
+      "method": "GET",
+      "interval": 5,
+      "mqtt_topic": "ipx800v5/api/core/io/relais2/on",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "relais3_status",
+      "url": "http://{ip}/api/core/io/3?ApiKey={apikey}",
+      "method": "GET",
+      "interval": 5,
+      "mqtt_topic": "ipx800v5/api/core/io/relais3/on",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "relais4_status",
+      "url": "http://{ip}/api/core/io/4?ApiKey={apikey}",
+      "method": "GET",
+      "interval": 5,
+      "mqtt_topic": "ipx800v5/api/core/io/relais4/on",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "relais5_status",
+      "url": "http://{ip}/api/core/io/5?ApiKey={apikey}",
+      "method": "GET",
+      "interval": 5,
+      "mqtt_topic": "ipx800v5/api/core/io/relais5/on",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "relais6_status",
+      "url": "http://{ip}/api/core/io/6?ApiKey={apikey}",
+      "method": "GET",
+      "interval": 5,
+      "mqtt_topic": "ipx800v5/api/core/io/relais6/on",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "relais7_status",
+      "url": "http://{ip}/api/core/io/7?ApiKey={apikey}",
+      "method": "GET",
+      "interval": 5,
+      "mqtt_topic": "ipx800v5/api/core/io/relais7/on",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "relais8_status",
+      "url": "http://{ip}/api/core/io/8?ApiKey={apikey}",
+      "method": "GET",
+      "interval": 5,
+      "mqtt_topic": "ipx800v5/api/core/io/relais8/on",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    }
+  ],
+  "mqtt_to_http": [
+    {
+      "name": "set_relais1",
+      "topic": "ipx800v5/api/core/io/relais1/on",
+      "url": "http://{ip}/api/core/io/1?ApiKey={apikey}",
+      "method": "PUT",
+      "payload_mapping": "raw",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "set_relais2",
+      "topic": "ipx800v5/api/core/io/relais2/on",
+      "url": "http://{ip}/api/core/io/2?ApiKey={apikey}",
+      "method": "PUT",
+      "payload_mapping": "raw",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "set_relais3",
+      "topic": "ipx800v5/api/core/io/relais3/on",
+      "url": "http://{ip}/api/core/io/3?ApiKey={apikey}",
+      "method": "PUT",
+      "payload_mapping": "raw",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "set_relais4",
+      "topic": "ipx800v5/api/core/io/relais4/on",
+      "url": "http://{ip}/api/core/io/4?ApiKey={apikey}",
+      "method": "PUT",
+      "payload_mapping": "raw",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "set_relais5",
+      "topic": "ipx800v5/api/core/io/relais5/on",
+      "url": "http://{ip}/api/core/io/5?ApiKey={apikey}",
+      "method": "PUT",
+      "payload_mapping": "raw",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "set_relais6",
+      "topic": "ipx800v5/api/core/io/relais6/on",
+      "url": "http://{ip}/api/core/io/6?ApiKey={apikey}",
+      "method": "PUT",
+      "payload_mapping": "raw",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "set_relais7",
+      "topic": "ipx800v5/api/core/io/relais7/on",
+      "url": "http://{ip}/api/core/io/7?ApiKey={apikey}",
+      "method": "PUT",
+      "payload_mapping": "raw",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    },
+    {
+      "name": "set_relais8",
+      "topic": "ipx800v5/api/core/io/relais8/on",
+      "url": "http://{ip}/api/core/io/8?ApiKey={apikey}",
+      "method": "PUT",
+      "payload_mapping": "raw",
+      "params": {
+        "ip": "192.168.1.120",
+        "apikey": "h9eiA5gE4AH4EOD3RWDI"
+      }
+    }
+  ]
+}
